@@ -53,4 +53,3 @@ desses dados.
 
 - Qual o melhor dia e horário para todos?
 - Telegram?
-- 
