@@ -26,14 +26,19 @@ Campos que devem ser do tipo seleção, como extrair a lista de cada um?
 
 Colunas para normalizar:
 
- - departamento
- - grau
+ - departamento: 11 opções
+ - grau: 3 opções
 
 Padrão para nomes das colunas:
 
-- nid
+- nid - com o seu bloco
 - title
 - field_NOME_DO_CAMPO
+
+Garantir valores inteiros nas colunas:
+
+- páginas
+- ano
 
 Fazer importação usando import_csv no Drupal.
 
