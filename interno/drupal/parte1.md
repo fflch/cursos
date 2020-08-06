@@ -1,5 +1,9 @@
 ## Treinamento drupal interno - parte 1 - tipo de conteúdo
 
+nids: https://docs.google.com/document/d/163t17a3K9Dz2DKowxyNw2j9KlP7E0mbUKH_08bkRd4g/edit 
+
+https://youtu.be/eOckzwA7mUs
+
 Administração dos sites:
 
 - https://sites.fflch.usp.br/
