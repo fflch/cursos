@@ -1,3 +1,5 @@
+## Treinamento drupal interno - parte 1 - tipos de conteúdo
+
 Administração dos sites:
 
 - https://sites.fflch.usp.br/
@@ -29,13 +31,13 @@ Colunas para normalizar:
 
 Padrão para nomes das colunas:
 
-- nid - vamos reservar entre nós um intervalo para cada
+- nid
 - title
 - field_NOME_DO_CAMPO
 
 Fazer importação usando import_csv no Drupal.
 
-Tarefa:
+## Tarefa:
 
 - Criar um tipo de conteúdo com no padrão: `SEU_NOME_teses`
 - Criar os campos correspondentes
@@ -44,7 +46,11 @@ Tarefa:
 - Tratar a planilha real - se quiser mandar no github via PR o código usado, podem mandar - Reprodutibilidade
 - Importar a planilha tratada
 
+- *reservar nid*: vamos reservar entre nós um intervalo para cada
+
 Vamos partir dessa planilha no próximo encontro, criando uma interface de busca para o usuário a partir
 desses dados. 
 
 - Qual o melhor dia e horário para todos?
+- Telegram?
+- 
