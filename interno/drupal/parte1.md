@@ -1,4 +1,4 @@
-## Treinamento drupal interno - parte 1 - tipos de conteúdo
+## Treinamento drupal interno - parte 1 - tipo de conteúdo
 
 Administração dos sites:
 
