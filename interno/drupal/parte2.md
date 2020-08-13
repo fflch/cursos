@@ -18,12 +18,14 @@ Tópicos de hoje:
 - Tipo de conteúdo default da fflch: página básica 
 - Implementação de Views
 
-Tarefa: Cada um fazer sua view
-Vídeos: Blocos e Menu
+Tarefas
+
+- Cada um fazer sua view
+- Vídeos: Blocos e Menu
 
 Organização: 
 
- - Acertar a escala de atendimento
+ - Acertar a escala de atendimento - https://groups.google.com/a/usp.br/g/sites.fflch sites.fflch@usp.br
  - Marcar um último dia para vermos webform (caso não tenha dado tempo hoje)
  - Ver quem pode participar de reunião do CAPH - sexta das 14h
  - Como distribuímos as atividades na STI
