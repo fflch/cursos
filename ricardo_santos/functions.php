@@ -71,7 +71,7 @@ function get_departamento($str, $empty){
         preg_match('/LETRAS*\s*ORIENTAIS*|DLO|^LO$/', $aux, $match)){
         return "LETRAS ORIENTAIS";
     }
-    else if(preg_match('/L?ING(U|Ü)(Í|I)STICA+|^DL$/', $aux, $match)){
+    else if(preg_match('/L?(I|Í)NG(U|Ü)?(Í|I|Ï)*S?TIC(A|O)+S*|LINGUISTIQUE|^DL$/', $aux, $match)){
         return "LINGUÍSTICA";
     }
     else if(preg_match('/TEORIA\s*LIT(E|É)R(Á|A)RIA\s*E\s*LITERATURA\s*COMPARADA|DTLL|TLL|TEORIA\s*LIT(E|É)R(Á|A)RIA/', $aux, $match)){
@@ -96,6 +96,139 @@ function get_grau($str, $empty){
     else{
         return $empty ?  "" : $str;
     }
+}
+function get_area($str, $empty){
+    //remove all spaces and points
+    $aux = preg_replace('/\s|\./', '', $str);
+
+    if(preg_match('/ANTR*OR*PO*(LO)*GIU?A|ANTR*OR*PO*(LO)*GIU?A\s*SOCIAL|ETNOLOGIA|ANTROLOGIA/', $aux, $match)){
+        return "ANTROPOLOGIA SOCIAL";
+    }
+    else if(preg_match('/CI(E|Ê)NCIAS*\s*POL?(I|Í)T+I?CA|DP|^DCP$|^CP$|^POL(I|Í)TICA$/', $aux, $match)){
+        return "CIÊNCIA POLÍTICA";
+    }
+    else if(preg_match('/FIL(I|O)O?(S|Z)(O|I)FIA|DF|L(O|Ó)GICA/', $aux, $match)){
+        return "FILOSOFIA";
+    }
+    else if(preg_match('/GEO?(G|F)RA?(TA)?FIA\s*(F|G)(Í|I)?SICA|GEO-?CI(Ê|E)NCIAS*|GEOLOGIA|GEOMORFOLOGIA/', $aux, $match)){
+        return "GEOGRAFIA FÍSICA";
+    }
+    else if(preg_match('/GEO(G|F)?RA(F|G)IA\s*(HUM?A(N|M)A|SOCIAL|H?URBANA|POL(Í|I)TICA)/', $aux, $match)){
+        return "GEOGRAFIA HUMANA";
+    }
+    else if(preg_match('/H(I|Í)ST(Ó|O)RIA\s*ECON(Ô|O)MICA|HE/', $aux, $match)){
+        return "HISTÓRIA ECONÔMICA";
+    }
+    else if(preg_match('/H(I|Í)?S?T(Ó|O)A*(RIA)+\s*(SOC*(I|Í)?AL|SOCILA)/', $aux, $match)){
+        return "HISTÓRIA SOCIAL";
+    }
+    else if(preg_match('/SO(C|G)IO?LOGIA/', $aux, $match)){
+        return "SOCIOLOGIA";
+    }
+    else if(preg_match('/ESTUDOS\s*COMPARA*DOS\s*DE\s*(LITERATURAS*)*\s*DE\s*LÍNGUA\s*PORTUGUESA|ESTUDOS*\s*COMPARADOS*/', $aux, $match)){
+        return "ESTUDOS COMPARADOS DE LITERATURAS DE LÍNGUA PORTUGUESA";
+    }
+    else if(preg_match('/FILOLOGIA\s*(E|DA)\s*(L(Í|I)N?GUA|LINGU(Í|I)S?TICA)\s*PORTUI?GU?(E|Ê)SA?|FILOLOGIA\s*PORTUI?GU?(E|Ê)SA?/', $aux, $match)){
+        return "FILOLOGIA E LÍNGUA PORTUGUESA";
+    }
+    else if(
+        (
+            preg_match('/LETRAS*|L(I|Í)NGUA+S*/', $aux, $match)
+            &&
+            (
+                preg_match('/CL(Á|A)S*ICAS*/', $aux, $match)
+                ||
+                preg_match('/VERN(Á|A)CULAS*/', $aux, $match)    
+            )
+
+        )
+        ||
+            preg_match('/LETRAS*\s*CL(Á|A)SSICAS*\s*E*\s*VERN(Á|A)CULAS*|DLCV|LCV|DCV|CL(Á|A)SSICAS*\s*E*\s*VERN(Á|A)CULAS*|LETRAS*\s*CL(Á|A)SSICAS*|^FLC$|^DLC$/', 
+            $aux, $match)
+        ){
+        return "LETRAS CLÁSSICAS";
+    }
+    else if(preg_match('/(LÍNGUA|LITE?R(Á|A)TUR?A)\s*ALEM(Ã|Â)/', $aux, $match)){
+        return "LÍNGUA E LITERATURA ALEMÃ";
+    }
+
+    else if(
+        preg_match('/LETRAS ESTRANGEIRAS E TRADUÇÃO|^TRADUÇÃO$|(ESTUDOS|LITER(A|Á)RIOS)\s*E?\s*TRADUTOL(O|Ó)GICOS/', $aux, $match)
+        ||
+        (
+            preg_match('/L?(I|Í)(N|M)GUAS?|LIE?TE?RATURAS?|LITER(Á|A)RIOS*|CULTURA/', $aux, $match)
+            &&            
+            preg_match('/FRAN?C(Ê|E)S?A?|RUSSA|(A|Á)RABES?|HEBR(A|Á)IC(A|O)S*|JUDA(I|Í)C(A|O)S*|ARMÊNIA|CHIN(E|Ê)SA?|GREGA/', $aux, $match)  
+        )
+        ){
+        return "LETRAS ESTRANGEIRAS E TRADUÇÃO";
+    }
+
+    else if(preg_match('/L?(I|Í)(N|M)GUAS?,?\s*E?\s*LIE?TE?RATURAS?\s*E?\s*(CULTURA)?\s*ITALIANAS?|(L?(I|Í)(N|M)GUAS?|LIE?TE?RATURAS?)\s*ITALIANAS?/', $aux, $match)){
+        return "LÍNGUA, LITERATURA E CULTURA ITALIANAS";
+    }
+    else if(
+        (
+            preg_match('/L?(I|Í)(N|M)GUAS?|LIE?TE?RATURAS?/', $aux, $match)
+            &&
+            (
+                preg_match('/ESPANHOLA/', $aux, $match)
+                ||
+                preg_match('/HISPANO\s*-?AMERICANA|LATIN(O|A)/', $aux, $match)    
+            )
+
+        )
+        
+        ){
+        return "LÍNGUA ESPANHOLA E LITERATURAS ESPANHOLA E HISPANO AMERICANA";
+    }
+    else if(
+        (
+            preg_match('/L?(I|Í)(N|M)GUAS?|LIE?TE?RATURAS?|LITER(Á|A)RIOS*/', $aux, $match)
+            &&
+            (
+                preg_match('/INGL(Ê|E)(S|Z)/', $aux, $match)
+                ||
+                preg_match('/NORTE-?AMERICANA/', $aux, $match)    
+            )
+
+        )
+        
+        ){
+        return "ESTUDOS LINGUÍSTICOS E LITERÁRIOS EM INGLÊS";
+    }
+    else if(
+        (
+            preg_match('/L?(I|Í)(N|M)GUAS?|LIE?TE?RATURAS?|LITER(Á|A)RIOS*|CULTURA/', $aux, $match)
+            &&
+            preg_match('/JAPONESA|JAPON(Ê|E)(S|Z)/', $aux, $match) 
+        )
+        
+        ){
+        return "LÍNGUA, LITERATURA E CULTURA JAPONESA";
+    }
+    else if(preg_match('/L?(I|Í)NG(U|Ü)?(Í|I|Ï)*S?TIC(A|O)+S*|LINGUISTIQUE/', $aux, $match)){
+        return "LINGUÍSTICA";
+    }
+    else if(preg_match('/LITERA(T|R)U(R|T)A\s*BR?A?SIE?L?E?I+RA/', $aux, $match)){
+        return "LITERATURA BRASILEIRA";
+    }
+    else if(preg_match('/LITERA?(T|R)U(R|T)A\s*,?PORTUGU(Ê|E)S?A/', $aux, $match)){
+        return "LITERATURA PORTUGUESA";
+    }
+    else if(preg_match('/(TEORIA)?\s*,?LIE?T(A|E)R(Á|A)(T|R)I(A|O)S*\s*,?E?\s*,?LITERA?(T|R)(U|I)(R|T)A\s*,?COMA?P?(A|O)RADA|^TEORIA LIE?T(A|E)R(Á|A)(T|R)I(A|O)S*$/', $aux, $match)){
+        return "TEORIA LITERÁRIA E LITERATURA COMPARADA";
+    }
+    else if(preg_match('/HUMANIDADES, DIREITOS E OUTRAS LEGITIMIDADES|^HUMANIDADES$/', $aux, $match)){
+        return "HUMANIDADES, DIREITOS E OUTRAS LEGITIMIDADES";
+    }
+    else if(preg_match('/MESTRADO PROFISSIONAL EM LETRAS EM REDE NACIONAL/', $aux, $match)){
+        return "MESTRADO PROFISSIONAL EM LETRAS EM REDE NACIONAL";
+    }
+    else{
+        return $empty ?  "" : $str;
+    }
+
 }
 
 function get_paginas($page, $empty){

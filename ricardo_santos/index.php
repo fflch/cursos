@@ -58,7 +58,8 @@ if (($handle = fopen("teses.csv", "r")) !== FALSE) {
                     $aux = get_grau($aux, true);
                 }
                 else if($colunm[$c] == 'area'){
-                    $area = add_to_array($aux, $area);// usado para saber quais são as variações de areas . Não é necessário para a obtenção do .csv tratado
+                    $area = add_to_array(get_area($aux, false), $area);// usado para saber quais são as variações de areas . Não é necessário para a obtenção do .csv tratado
+                    $aux = get_area($aux, true);
                 }
                 $table[$row][$colunm[$c]] = $aux;
             }
@@ -67,7 +68,7 @@ if (($handle = fopen("teses.csv", "r")) !== FALSE) {
         $row++;
     }
     fclose($handle);
-    save_csv('testes_normalizadas', $colunm, $table, 2000);
+    save_csv('testes_normalizadas', $colunm, $table, 0);
 
     //salva os campos padrões e as variações que fugiram do padrão. Para pegar apenas os valores padrões use get_field_name(field_name, true) acima, assim os valores fora do padrão não serão incluídos no array.
     sort($area);
@@ -84,7 +85,6 @@ if (($handle = fopen("teses.csv", "r")) !== FALSE) {
 }
 
 echo '<pre>';
-//sort($departamento);
 //print_r($departamento);
 //print_r($colunm);
 //print_r($table);
