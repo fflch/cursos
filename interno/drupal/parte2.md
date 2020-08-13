@@ -25,6 +25,7 @@ Tarefas
 
 Organização: 
 
+ - Atividades: síncrona e assíncrona
  - Acertar a escala de atendimento - https://groups.google.com/a/usp.br/g/sites.fflch sites.fflch@usp.br
  - Marcar um último dia para vermos webform (caso não tenha dado tempo hoje)
  - Ver quem pode participar de reunião do CAPH - sexta das 14h
