@@ -9,7 +9,7 @@ Minha apresentação:
 
 - R e python
 - Pull requests
-- curso de git
+- curso de git e programação com DRUPAL
 
 Tópicos de hoje:
 
