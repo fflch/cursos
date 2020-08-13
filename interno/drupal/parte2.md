@@ -5,8 +5,11 @@ Apresentações:
 - Mostrar como ficou o cadastro de tese
 - Falar do caminho tortuoso do csv 
 
-R e python
-Pull requests
+Minha apresentação:
+
+- R e python
+- Pull requests
+- curso de git
 
 Tópicos de hoje:
 
@@ -16,10 +19,14 @@ Tópicos de hoje:
 - Implementação de Views
 
 Tarefa: Cada um fazer sua view
-
 Vídeos: Blocos e Menu
 
-Acertar a escala de atendimento e marcar um último dia para vermos webform.
+Organização: 
+
+ - Acertar a escala de atendimento
+ - Marcar um último dia para vermos webform (caso não tenha dado tempo hoje)
+ - Ver quem pode participar de reunião do CAPH - sexta das 14h
+ - Como distribuímos as atividades na STI
 
 
 
