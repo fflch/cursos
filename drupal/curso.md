@@ -1,13 +1,14 @@
-Drupal em universidades
+Introdução
 
-O Drupal é uma interface quer torna possível gerenciarmos os dados/informações
-de forma agradável. Tudo gira em torno do conteúdo.
+- Drupal em universidades ao redor mundo
+- Fácil administração de sites
+
+
 
 Página Básica:
 
 Código Fonte
 Editor de texto: 
-Negrito, itálico e sublinhado
 Citação
 Hierarquia do conteúdo
 Cores
