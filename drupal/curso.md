@@ -1,25 +1,51 @@
-Introdução
+## Introdução
 
 - Drupal em universidades ao redor mundo
 - Fácil administração de sites
 
+## Editor de Texto - Página básica
 
+### Editor 1 - Manipulando textos: formatação, imagens, links e citações
 
-Página Básica:
+- Por que inimigo? O que eu vejo não é igual ao resultado final, sistema de camadas.
+- Maximização
+- Fonte, negrito, itálico, cor, tamanho e remover formatação
+- Citação, boxout
+- Colocar imagem com legenda centralizada
+- Imagens em miniaturas grupo - fotos do evento de Drupal
+- Link externo e link interno
+- Upload de arquivo ou link para arquivo no IMCE: Configurar para abrir em outra janela
+- url alternativa
+- youtube: https://youtu.be/rv6sopQJ-oc
+- revisões
+- publicar ou não a página?
+- Onde essa página é salva?
 
-Código Fonte
-Editor de texto: 
-Citação
-Hierarquia do conteúdo
-Cores
-Imagens multipla
-Imagens 
-Link e link externo
-Listas e hierarquia
+Exercício: Criar uma página bem formatada com citações, imagens, arquivos e links externos
+
+### Editor 2 - Manipulando textos: listas, âncora e tabelas
+
+- Listas (ordenada e não ordenada) e hierarquia (semântica)
+- Hierarquia nas listas
+- Âncora
+- Linha Horizontal
+- Tabelas: cabeçalho, inserir e deletar linhas e colunas
+- Accordion
+- Código Fonte e Markdown
+
+### Características Gerais do site
+
+- Promoted to front page e Destacado no topo da página
+- Biblioteca de Blocos Personalizados
+- Posicionamento de blocos
+- Menu Principal
+- Menus auxiliares
+- Regras de visibilidade dos blocos
+- Configurações do site: Nome do site e definição da Página Inicial
+
+### 
 
 multi idiomas
-menu 
-blocos
 
 
     Como criar uma página
@@ -32,6 +58,19 @@ blocos
     Manter versões das páginas com revisões
     Configurações de Menu
     Opções de Promoção
+
+
+
+
+
+
+Blocos
+
+## Editor de Texto
+
+
+
+
 
 
 
