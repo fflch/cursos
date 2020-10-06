@@ -3,7 +3,7 @@
 - Drupal em universidades ao redor mundo
 - Fácil administração de sites
 
-## Editor de Texto - Página básica
+## Configurações e Editor de Texto
 
 ### Editor 1 - Manipulando textos: formatação, imagens, links e citações
 
@@ -33,20 +33,36 @@ Exercício: Criar uma página bem formatada com citações, imagens, arquivos e 
 - Accordion
 - Código Fonte e Markdown
 
-### Características Gerais do site
+### Características gerais do site
 
 - Promoted to front page e Destacado no topo da página
 - Biblioteca de Blocos Personalizados
-- Posicionamento de blocos
+- Posicionamento e ordem de blocos
 - Menu Principal
 - Menus auxiliares
-- Regras de visibilidade dos blocos
+- Regras de visibilidade dos blocos (coringa *)
 - Configurações do site: Nome do site e definição da Página Inicial
+- Google Analytics
+- CSS injector (identidade visual)
 
-### 
+## Estruturação do Conteúdo
+
+    O que é uma taxonomia
+    Como criar uma taxonomia
+
+Views
 
 multi idiomas
 
+
+Desabilitar bloco de idiomas
+Gerenciar idiomas 
+Traduzir o nome do site 
+Traduzir conteúdos, exemplo com página básica
+Traduzir itens de menu principal
+
+
+csv import
 
     Como criar uma página
     Opções do editor
@@ -64,15 +80,7 @@ multi idiomas
 
 
 
-Blocos
-
 ## Editor de Texto
-
-
-
-
-
-
 
 - Criar um tipo de conteúdo com no padrão: `SEU_NOME_teses`
 - Criar os campos correspondentes
@@ -115,6 +123,50 @@ Tarefas
 
 - Cada um fazer sua view
 - Vídeos: Blocos e Menu
+
+
+
+
+    O que é um webform
+    Como criar um webform
+    Adicionar elemento
+        Tipos de elementos
+        Configurações gerais
+        Condições
+        Avançado
+        Acesso
+    Adicionar página
+        Configurações gerais
+        Condições
+        Avançado
+        Acesso
+    Adicionar layout
+        Configurações Gerais
+        Condições
+        Avançado
+        Acesso
+    Ver webform
+    Testar webform
+    Exportar webform
+    Clonar webform
+    Configurações
+        Geral
+        Formulário
+        Submissões
+        Confirmação
+        Emails
+        CSS/JS
+        Acesso
+        PDF
+
+    Exibir um webform como um bloco
+
+    
+    Adicionar elemento PDF
+    Configurar elemento PDF
+    Configurar envio do arquivo PDF por e-mail
+
+
 
 
 
