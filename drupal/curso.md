@@ -24,7 +24,7 @@
 - Onde essa página é salva?
 
 Exercício: Criar uma página bem formatada com citações, imagens, arquivos e links externos.
-Crie uam url alternativa e poste o link dessa página
+Crie uma url alternativa e postar o link dessa página no moodle
 
 ### Manipulando textos: listas, âncora e tabelas
 
@@ -54,12 +54,13 @@ Crie uam url alternativa e poste o link dessa página
 
 - Gerenciar idiomas
 - Bloco de idiomas
-- Não quero essa bandeira? /sites/drupal.fflch.usp.br/files/bandeiras/*.png
+- Meu idioma não está listado? klingon
+- Não quero essa bandeira? /sites/drupal.fflch.usp.br/files/bandeiras/*.png (aplicar patch)
 
 - Traduzir conteúdos, exemplo com página básica
 - Traduzir o nome do site: Traduzir system information
 - Traduzir itens de menu principal
-- Meu idioma não está listado?
+
 
 
 ### Tipos de conteúdo, taxonomia e views
@@ -126,45 +127,50 @@ Tarefas
 
 
 
+Parte 1 - Formulário Básico (Nelson)
 
-    O que é um webform
-    Como criar um webform
-    Adicionar elemento
-        Tipos de elementos
-        Configurações gerais
-        Condições
-        Avançado
-        Acesso
-    Adicionar página
-        Configurações gerais
-        Condições
-        Avançado
-        Acesso
-    Adicionar layout
-        Configurações Gerais
-        Condições
-        Avançado
-        Acesso
-    Ver webform
-    Testar webform
-    Exportar webform
-    Clonar webform
-    Configurações
-        Geral
-        Formulário
-        Submissões
-        Confirmação
-        Emails
-        CSS/JS
-        Acesso
-        PDF
+O que é um webform
+Como criar um webform
+Opção Build: Adicionar elemento
+Construção de um formulário “Inscrição no curso X” com os campos:
+Nome (campo de texto)
+e-mail (e-mail)
+Escolaridade (seleção)
+Endereço (Diversos caminhos)
+Upload de Arquivos
+Ordem entre os campos
+Compartilhe o código fonte do seu formulário com os amigos
+Modelos de Formulários FFLCH: https://github.com/fflch/webforms/
 
-    Exibir um webform como um bloco
+Configurações importantes:
+Abrir e fechar os formulários nas datas corretas (programar)
+Mensagem pós envio
 
-    
-    Adicionar elemento PDF
-    Configurar elemento PDF
-    Configurar envio do arquivo PDF por e-mail
+Download dos resultados em planilha
+Organização do formulário em múltiplas páginas
+
+Parte 2 - Formulário Avançado (Nelson)
+ 
+Campos condições (Campo Universidade que só aparece para graduados ou pós graduados)
+Restrição Unique
+Limite de submissões
+Captcha
+Webform URL alias
+Campos de controle do administrador
+Invitation
+Exibir um webform como um bloco
+
+Parte 3 - csv e views (Nelson)
+
+Importar submissões a partir de um csv
+Integração do webform com Views 
+
+Parte 4 - emails e geração de PDF (Thiago)
+
+Envio de email
+Construção de PDF
+Ver webform
+
 
 
 
