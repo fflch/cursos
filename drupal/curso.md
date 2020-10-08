@@ -2,10 +2,12 @@
 
 - Drupal em universidades ao redor mundo
 - Fácil administração de sites
+- identidade visual
+- Drupal na FFLCH: 10 anos
 
-## Configurações e Editor de Texto
+## Configurações básicas e Editor de Texto
 
-### Editor 1 - Manipulando textos: formatação, imagens, links e citações
+### Manipulando textos: formatação, imagens, links e citações
 
 - Por que inimigo? O que eu vejo não é igual ao resultado final, sistema de camadas.
 - Maximização
@@ -21,9 +23,10 @@
 - publicar ou não a página?
 - Onde essa página é salva?
 
-Exercício: Criar uma página bem formatada com citações, imagens, arquivos e links externos
+Exercício: Criar uma página bem formatada com citações, imagens, arquivos e links externos.
+Crie uam url alternativa e poste o link dessa página
 
-### Editor 2 - Manipulando textos: listas, âncora e tabelas
+### Manipulando textos: listas, âncora e tabelas
 
 - Listas (ordenada e não ordenada) e hierarquia (semântica)
 - Hierarquia nas listas
@@ -47,35 +50,32 @@ Exercício: Criar uma página bem formatada com citações, imagens, arquivos e 
 
 ## Estruturação do Conteúdo
 
-    O que é uma taxonomia
-    Como criar uma taxonomia
+### suporte a multi idiomas
 
-Views
+- Gerenciar idiomas
+- Bloco de idiomas
+- Não quero essa bandeira? /sites/drupal.fflch.usp.br/files/bandeiras/*.png
 
-multi idiomas
-
-
-Desabilitar bloco de idiomas
-Gerenciar idiomas 
-Traduzir o nome do site 
-Traduzir conteúdos, exemplo com página básica
-Traduzir itens de menu principal
+- Traduzir conteúdos, exemplo com página básica
+- Traduzir o nome do site: Traduzir system information
+- Traduzir itens de menu principal
+- Meu idioma não está listado?
 
 
-csv import
+### Tipos de conteúdo, taxonomia e views
 
-    Como criar uma página
-    Opções do editor
-        botões para formatação básica de conteúdo
-        upload de arquivos (pdf, docx etc)
-        upload e opções de imagem (jpg, png etc)
-        link para site externo
-    Definir endereço customizado
-    Manter versões das páginas com revisões
-    Configurações de Menu
-    Opções de Promoção
-
-
+- Além da página básica: estruture o seu conteúdo
+- Novo tipo de conteúdo: Livros do Fulano com dois campos título e autores
+- Importar um arquivo CSV com os livros
+- O que é uma taxonomia: Agregação automática do conteúdo
+- Como criar uma taxonomia -> Termos: doação, comprado, extraviado
+- Url personalizado do termo e descrição
+- No tipo de conteúdo "Livros do Fulano" agregar o vocabulário criado
+- Gerenciar exibição de formulário X Gerenciar exibição
+- Marcar alguns livros com os novos termos
+- Página dinâmica construída dinamicamente
+- View: Busca de Livros
+- Combine fields filter e Display em Tabela
 
 
 
