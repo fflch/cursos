@@ -23,9 +23,6 @@
 - publicar ou não a página?
 - Onde essa página é salva?
 
-Exercício: Criar uma página bem formatada com citações, imagens, arquivos e links externos.
-Crie uma url alternativa e postar o link dessa página no moodle
-
 ### Manipulando textos: listas, âncora e tabelas
 
 - Listas (ordenada e não ordenada) e hierarquia (semântica)
@@ -36,17 +33,23 @@ Crie uma url alternativa e postar o link dessa página no moodle
 - Accordion
 - Código Fonte e Markdown
 
-### Características gerais do site
+Exercício: Criar uma página bem formatada com citações, imagens, arquivos e links externos.
+Crie uma url alternativa e postar o link dessa página no moodle
 
+### Blocos e características gerais do site
+
+- Menu Principal e sub-itens
 - Promoted to front page e Destacado no topo da página
 - Biblioteca de Blocos Personalizados
 - Posicionamento e ordem de blocos
-- Menu Principal
 - Menus auxiliares
 - Regras de visibilidade dos blocos (coringa *)
 - Configurações do site: Nome do site e definição da Página Inicial
 - Google Analytics
 - CSS injector (identidade visual)
+
+Exercício: Criar uma sub página de evento dentro do site com ao menos dois blocos que só deverão
+aparecer nesta página
 
 ## Estruturação do Conteúdo
 
@@ -56,12 +59,10 @@ Crie uma url alternativa e postar o link dessa página no moodle
 - Bloco de idiomas
 - Meu idioma não está listado? klingon
 - Não quero essa bandeira? /sites/drupal.fflch.usp.br/files/bandeiras/*.png (aplicar patch)
-
 - Traduzir conteúdos, exemplo com página básica
 - Traduzir o nome do site: Traduzir system information
 - Traduzir itens de menu principal
-
-
+- Tradução de Blocos
 
 ### Tipos de conteúdo, taxonomia e views
 
@@ -78,98 +79,56 @@ Crie uma url alternativa e postar o link dessa página no moodle
 - View: Busca de Livros
 - Combine fields filter e Display em Tabela
 
+Exercício:
 
+- Criar um tipo de conteúdo "Livros do Fulano", fulano é seu nome,
+com dois campos título e autores
+- Importar o arquivo csv para seu conteúdo
+- Fazer uma view que lista os livros com opção de busca usando: Combine fields filter e Display em Tabela
 
+## Formlários
 
-## Editor de Texto
+### Formulário Básico
 
-- Criar um tipo de conteúdo com no padrão: `SEU_NOME_teses`
-- Criar os campos correspondentes
-- Importar os dados a partir de um csv com amostra controlada
-- Tome cuidado com os títulos das colunas e os tipos
-- Tratar a planilha real - se quiser mandar no github via PR o código usado, podem mandar - Reprodutibilidade
-- Importar a planilha tratada
+- O que é um webform
+- Como criar um webform
+- Opção Build: Adicionar elemento
+- Construção de um formulário “Inscrição no curso X” com os campos:
+- Nome (campo de texto)
+- e-mail (e-mail)
+- Escolaridade (seleção)
+- Endereço (Diversos caminhos)
+- Upload de Arquivos
+- Ordem entre os campos
+- Compartilhe o código fonte do seu formulário com os amigos
+- Modelos de Formulários FFLCH: https://github.com/fflch/webforms/
+- Download dos resultados em planilha
+- Organização do formulário em múltiplas páginas
 
-- *reservar nid*: vamos reservar entre nós um intervalo para cada
+- Configurações importantes:
+  - Abrir e fechar os formulários nas datas corretas (programar)
+  - Mensagem pós envio
 
-Vamos partir dessa planilha no próximo encontro, criando uma interface de busca para o usuário a partir
-desses dados. 
-
-- Qual o melhor dia e horário para todos?
-- Telegram?
-
-
-
-Apresentações:
-
-- nome
-- funcionário/a, estagiário/a, monitor/a
-- Mostrar como ficou o cadastro de tese
-- Falar do caminho tortuoso do csv 
-
-Minha apresentação:
-
-- R e python
-- Pull requests
-- curso de git e programação com DRUPAL
-
-Tópicos de hoje:
-
-- Ordem dos campos: manage display e form display
-- Tipo de campo ckeditor
-- Tipo de conteúdo default da fflch: página básica 
-- Implementação de Views
-
-Tarefas
-
-- Cada um fazer sua view
-- Vídeos: Blocos e Menu
-
-
-
-Parte 1 - Formulário Básico (Nelson)
-
-O que é um webform
-Como criar um webform
-Opção Build: Adicionar elemento
-Construção de um formulário “Inscrição no curso X” com os campos:
-Nome (campo de texto)
-e-mail (e-mail)
-Escolaridade (seleção)
-Endereço (Diversos caminhos)
-Upload de Arquivos
-Ordem entre os campos
-Compartilhe o código fonte do seu formulário com os amigos
-Modelos de Formulários FFLCH: https://github.com/fflch/webforms/
-
-Configurações importantes:
-Abrir e fechar os formulários nas datas corretas (programar)
-Mensagem pós envio
-
-Download dos resultados em planilha
-Organização do formulário em múltiplas páginas
-
-Parte 2 - Formulário Avançado (Nelson)
+### Formulário Avançado
  
-Campos condições (Campo Universidade que só aparece para graduados ou pós graduados)
-Restrição Unique
-Limite de submissões
-Captcha
-Webform URL alias
-Campos de controle do administrador
-Invitation
-Exibir um webform como um bloco
+- Campos condições (Campo Universidade que só aparece para graduados ou pós graduados)
+- Restrição Unique
+- Limite de submissões
+- Captcha
+- Webform URL alias
+- Campos de controle do administrador
+- Invitation
+- Exibir um webform como um bloco
 
-Parte 3 - csv e views (Nelson)
+### Import de csv e webform + views
 
-Importar submissões a partir de um csv
-Integração do webform com Views 
+- Importar submissões a partir de um csv
+- Integração do webform com Views 
 
-Parte 4 - emails e geração de PDF (Thiago)
+### Emails e geração de PDF
 
-Envio de email
-Construção de PDF
-Ver webform
+- Envio de email
+- Construção de PDF
 
 
 
