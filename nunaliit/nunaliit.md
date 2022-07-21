@@ -57,7 +57,3 @@ Habilitar zoom com a bolinha do mouse:
 
     ,"toggleClick": true
     ,"enableWheelZoom": true
-
-## Tarefa 6:
-
-Mudar idioma para pt-br
