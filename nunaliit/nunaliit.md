@@ -31,9 +31,11 @@ Criando uma página com mais detalhes do projeto e colocar um link na home:
 
 ## Tarefa 3:
 
-Criando uma página html com mais detalhes do projeto e colocar um link na home:
+Mudar o mapa inicial, por exemplo, para localização da USP [-46.73,-23.57,-46.71,-23.55].
+Formato [x1, y1, x2, y2]: (x1,y1) é o ponto inferior esquerdo e (x2, y2) é o ponto superior direito.
+x: longitude e y: latitude.
 
-    code htdocs/usp.html
+    code docs/module.demo/nunaliit_module/map.json
     ../nunaliit/bin/nunaliit update
     ../nunaliit/bin/nunaliit run
 
@@ -47,16 +49,6 @@ Mudando o nome do módulo (submenu):
 
 ## Tarefa 5:
 
-Mudar o mapa inicial, por exemplo, para localização da USP [-46.73,-23.57,-46.71,-23.55].
-Formato [x1, y1, x2, y2]: (x1,y1) é o ponto inferior esquerdo e (x2, y2) é o ponto superior direito.
-x: longitude e y: latitude.
-
-    code docs/module.demo/nunaliit_module/map.json
-    ../nunaliit/bin/nunaliit update
-    ../nunaliit/bin/nunaliit run
-
-## Tarefa 6:
-
 Habilitar zoom com a bolinha do mouse:
 
     code docs/module.demo/nunaliit_module/map.json
@@ -66,6 +58,6 @@ Habilitar zoom com a bolinha do mouse:
     ,"toggleClick": true
     ,"enableWheelZoom": true
 
-## Tarefa 7:
+## Tarefa 6:
 
 Mudar idioma para pt-br
