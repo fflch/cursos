@@ -1,40 +1,45 @@
 {
-    "group": "atlas"
+    "group": "universidades"
     ,"id": "restaurante"
     ,"label": "Restaurante"
     ,"relatedSchemas": [ ]
     ,"initialLayers": [ "public" ]
     ,"attributes":[
-    {
-        "type":"string"
-        ,"id":"nome"
-        ,"label":"Nome"
-        ,"includedInBrief":true
-    }
-    ,{
-        "type":"selection"
-        ,"id":"tipo"
-        ,"label":"tipo"
-        ,"includedInBrief":true
-        ,"options":[
-            {
-                "label": "vegano"
-                ,"value": "Vegano"
-            }
-            ,{
-                "label": "Vegetariano"
-                ,"value": "Vegetariano"
-            }
-            ,{
-                "label": "Completo"
-                ,"value": "Completo"
-            }
-        ]
-    }
-    ,{
-        "type":"checkbox"
-        ,"id":"estacionamento"
-        ,"label":"Tem estacionamento?"
-    }
+        {
+            "type":"string"
+            ,"id":"nome"
+            ,"label":"Nome"
+            ,"includedInBrief":true
+        }
+        ,{
+            "type":"selection"
+            ,"id":"tipo"
+            ,"label":"tipo"
+            ,"includedInBrief":true
+            ,"options":[
+                {
+                    "label": "vegano"
+                    ,"value": "Vegano"
+                }
+                ,{
+                    "label": "Vegetariano"
+                    ,"value": "Vegetariano"
+                }
+                ,{
+                    "label": "Completo"
+                    ,"value": "Completo"
+                }
+            ]
+        }
+        ,{
+            "type":"checkbox"
+            ,"id":"estacionamento"
+            ,"label":"Tem estacionamento?"
+        }
+        ,{
+            "type":"file"
+            ,"id":"foto"
+            ,"label":"Foto"
+        }
     ]
 }
