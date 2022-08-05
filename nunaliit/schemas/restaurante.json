@@ -17,16 +17,12 @@
             ,"includedInBrief":true
             ,"options":[
                 {
-                    "label": "vegano"
-                    ,"value": "Vegano"
+                    "label": "à la carte"
+                    ,"value": "à la carte"
                 }
                 ,{
-                    "label": "Vegetariano"
-                    ,"value": "Vegetariano"
-                }
-                ,{
-                    "label": "Completo"
-                    ,"value": "Completo"
+                    "label": "self-service"
+                    ,"value": "self-service"
                 }
             ]
         }
@@ -41,5 +37,10 @@
 			,"label":"Descrição"
 			,"textarea": true
 		}
+        ,{
+            "type":"file"
+            ,"id":"file"
+            ,"label":"File"
+        }
     ]
 }

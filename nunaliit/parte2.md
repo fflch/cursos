@@ -28,11 +28,11 @@ Alterar títulos do módulos:
 
 ## Tarefa 3: Acertar as janelas das duas universidades
 
-    docs/module.usp/nunaliit_module/map.json
+    module.usp/nunaliit_module/map.json
     [-46.73,-23.57,-46.71,-23.55]
     http://127.0.0.1:8080/index.html?module=module.usp
 
-    docs/module.unicamp/nunaliit_module/map.json
+    module.unicamp/nunaliit_module/map.json
     [-47.07,-22.82,-47.06,-22.81]
     http://127.0.0.1:8080/index.html?module=module.unicamp
 
