@@ -17,9 +17,14 @@ Nesta parte abordaremos a entrada de dados.
 
     cp -a module.demo module.usp
     echo 'module.usp' > module.usp/_id.txt
-
+    
     cp -a module.demo module.unicamp
     echo 'module.unicamp' > module.unicamp/_id.txt
+
+Alterar títulos do módulos:
+
+    module.usp/nunaliit_module/title.json
+    module.unicamp/nunaliit_module/title.json
 
 ## Tarefa 3: Acertar as janelas das duas universidades
 
@@ -48,7 +53,7 @@ Nesta parte abordaremos a entrada de dados.
           "en": "Unicamp",
           "fr": "Unicamp"
         },
-        "module": "module.unicamp",
+        "module": "module.unicamp"
       },
 
 ## Tarefa 5: Colocar informações nos dois módulos
@@ -72,42 +77,30 @@ Nesta parte abordaremos a entrada de dados.
 Criação de dois schemas (restaurante e museu) com as seguintes propriedades:
 
     ../nunaliit/bin/nunaliit add-schema --id restaurante
-    docs/schema.universidades_restaurante/definition.json
+    docs/schema.usp_restaurante/definition.json
 
 - Nome
 - Tipo: à la carte ou self-service
 - Estacionamento
-- Foto
+- Descrição
 
 Permitir o schema no module:
 
     docs/module.usp/nunaliit_module/edit.json
+    docs/module.usp/nunaliit_module/display.json
+
+Atualizar o banco de dados:
+
+    ../nunaliit/bin/nunaliit update-schema --name universidades_restaurante
+    ../nunaliit/bin/nunaliit update
+    ../nunaliit/bin/nunaliit run
+
+idem para unicamp.
+
+Novo schema Museu:
 
     ../nunaliit/bin/nunaliit add-schema --id museu
 
 - Nome
 - Telefone
-- website, foto
-
-
-
-Definição do json: docs/schema.atlas_restaurante/definition.json
-
-Em docs/module.demo/nunaliit_module/edit.json definir o cadastro de restaurante como default:
-
-	"defaultSchemaName": "atlas_restaurante"
-    "newDocumentSchemaNames": ["atlas_restaurante"]
-
-Atualizando:
-
-    ../nunaliit/bin/nunaliit update-schema --name atlas_restaurante
-    ../nunaliit/bin/nunaliit update
-
-
-	
-
-
-
-## Tarefa 2: Módulo
-
-Modules provide a means to organize the atlas into related content. 
+- website

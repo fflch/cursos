@@ -3,7 +3,6 @@
     ,"id": "restaurante"
     ,"label": "Restaurante"
     ,"relatedSchemas": [ ]
-    ,"initialLayers": [ "public" ]
     ,"attributes":[
         {
             "type":"string"
@@ -35,11 +34,12 @@
             "type":"checkbox"
             ,"id":"estacionamento"
             ,"label":"Tem estacionamento?"
-        }
-        ,{
-            "type":"file"
-            ,"id":"foto"
-            ,"label":"Foto"
-        }
+        },
+		{
+			"type":"string"
+			,"id":"desc"
+			,"label":"Descrição"
+			,"textarea": true
+		}
     ]
 }
