@@ -1,0 +1,46 @@
+{
+    "group": "universidades"
+    ,"id": "restaurante"
+    ,"label": "Restaurante"
+    ,"relatedSchemas": [ ]
+    ,"attributes":[
+        {
+            "type":"string"
+            ,"id":"nome"
+            ,"label":"Nome"
+            ,"includedInBrief":true
+        }
+        ,{
+            "type":"selection"
+            ,"id":"tipo"
+            ,"label":"tipo"
+            ,"includedInBrief":true
+            ,"options":[
+                {
+                    "label": "à la carte"
+                    ,"value": "à la carte"
+                }
+                ,{
+                    "label": "self-service"
+                    ,"value": "self-service"
+                }
+            ]
+        }
+        ,{
+            "type":"checkbox"
+            ,"id":"estacionamento"
+            ,"label":"Tem estacionamento?"
+        },
+		{
+			"type":"string"
+			,"id":"desc"
+			,"label":"Descrição"
+			,"textarea": true
+		}
+        ,{
+            "type":"file"
+            ,"id":"file"
+            ,"label":"File"
+        }
+    ]
+}
